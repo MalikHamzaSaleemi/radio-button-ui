@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        /* Hide the default radio button appearance */
+        input[type="radio"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 2px solid black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            background-color: white;
+        }
+
+        /* Unchecked state: inner dot is white */
+        input[type="radio"]::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color: white; /* White inner dot */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Checked state: inner dot is black and border color changes */
+        input[type="radio"]:checked {
+            border-color:black;
+        }
+
+        input[type="radio"]:checked::after {
+            background-color: #8BD3C8 ; /* Black inner dot when checked */
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>Custom Radio Button with Dynamic Styles</h3>
+        <input type="radio"  name="radio1" value="GFG">
+        <label for="specifyColor">GFG</label>
+    </center>
+</body>
+</html>
