@@ -26,6 +26,7 @@ The HTML structure is minimal, consisting of an input element of type `radio` an
     <input type="radio" id="specifyColor" name="radio1" value="GFG">
     <label for="specifyColor">GFG</label>
 </center>
+<style>
 /* Hide the default radio button appearance */
 input[type="radio"] {
     -webkit-appearance: none;
@@ -60,3 +61,4 @@ input[type="radio"]:checked {
 input[type="radio"]:checked::after {
     background-color: black; /* Black inner dot when checked */
 }
+</style>
