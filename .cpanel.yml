@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gsv6b99sdobq/erp.nexora.llc
+    - /bin/cp * $DEPLOYPATH
